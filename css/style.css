@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+  margin: 0;
+  font-family: 'Lucida Grande', tahoma,verdana,arial,sans-serif;
+  line-height: 1.28;
+}
+
+.contentwrapper {
+  background-color: #e5e8ec;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items:first-child{
+  margin-right: 50px !important;
+}
+.items:last-child{
+  margin-left: 100px !important;
+}
+.items h1 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 2em;
+  color:#1a356e;
+}
+.items > h4{
+  font-weight:500;
+  font-size: 20px;
+  line-height: 2em;
+  margin: 0px 10px;
+}
+
+.items .facebook {
+  display: none;
+}
+
+.card {
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+form input {
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 0.5px solid #b9bbbd;
+  margin: 10px 0px;
+}
+
+form .login {
+  color:#fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  background-color: rgb(16, 109, 185);
+}
+
+form .forget {
+  align-self: center;
+  color: rgb(16, 109, 185);
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+hr {
+  margin: 10px;
+}
+
+form a:last-child {
+  align-self: center;
+  color: #fff !important;
+  background-color: rgb(47, 190, 47);
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+footer {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+footer .rows {
+  padding: 40px 0px !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer  > .rows a {
+    color:darkgray;
+    font-size: 14px;
+    padding: 5px;
+    align-items: center;
+  }
+
+@media screen and (max-width: 700px) {
+  .row {
+    padding-top: 10px;
+  }
+  .items:first-child {
+    display: none;
+  }
+
+  .contentwrapper {
+    width: 100%;
+  }
+
+  .items:last-child {
+
+    margin-left: 0px !important;
+  }
+
+  .card {
+    margin-top: 20px;
+    width: 350px;
+  }
+
+  .items .facebook {
+    display: block;
+  }
+
+  .items .facebook h1 {
+    color: rgb(16, 109, 185);
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .celeb {
+    font-size: 13px;
+    margin: 15px 0px;
+  }
+}
